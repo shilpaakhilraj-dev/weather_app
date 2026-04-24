@@ -1,0 +1,5 @@
+Coimbatore, IN | Temp: 30.88 | Feels Like: 33.44 | Condition: few clouds | Humidity: 55 | Wind: 2.06
+Palakkad, IN | Temp: 33.07 | Feels Like: 37.33 | Condition: few clouds | Humidity: 53 | Wind: 1.66
+Chennai, IN | Temp: 32.2 | Feels Like: 39.2 | Condition: scattered clouds | Humidity: 71 | Wind: 5.14
+Bengaluru, IN | Temp: 29.66 | Feels Like: 31.66 | Condition: few clouds | Humidity: 57 | Wind: 2.68
+Coimbatore, IN | Temp: 34.88 | Feels Like: 34.3 | Condition: haze | Humidity: 29 | Wind: 2.57
