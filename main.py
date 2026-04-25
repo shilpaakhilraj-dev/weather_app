@@ -12,7 +12,7 @@ app = FastAPI()
 # CORS (needed for Angular)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://shilpaakhilraj-dev.github.io/weather_app_frontend/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
