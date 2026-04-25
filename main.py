@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 
-# ✅ reuse your existing modules
+# reuse your existing modules
 from api import get_weather as fetch_weather
 from geocode import get_coordinates
 from cli import display_weather
@@ -9,7 +9,7 @@ from utils import parse_args
 
 app = FastAPI()
 
-# ✅ CORS (needed for Angular)
+# CORS (needed for Angular)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -18,7 +18,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 🌤️ API endpoint
+# API endpoint
 @app.get("/weather")
 def weather_api(city: str = Query(...), units: str = "metric"):
     try:
@@ -41,7 +41,7 @@ def weather_api(city: str = Query(...), units: str = "metric"):
         return {"error": str(e)}
 
 
-# 🖥️ CLI still works (unchanged logic)
+# CLI still works (unchanged logic)
 def main():
     args = parse_args()
 
@@ -83,6 +83,6 @@ def main():
         print(f"❌ Error: {e}")
 
 
-# ⚠️ Important: DO NOT auto-run CLI when running API
+# Important: DO NOT auto-run CLI when running API
 if __name__ == "__main__":
     main()

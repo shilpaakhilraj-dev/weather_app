@@ -3,7 +3,7 @@ def display_weather(city, country, weather_data, units):
 
     unit_symbol = "°C" if units == "metric" else "°F"
 
-    print(f"\n🌍 Weather Forecast for {city}, {country}")
+    print(f"\n Weather Forecast for {city}, {country}")
     print("=" * 40)
 
     for i in range(len(daily["time"])):
